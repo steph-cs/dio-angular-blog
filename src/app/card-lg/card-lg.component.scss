@@ -3,15 +3,14 @@ a{
 }
 
 
+
 .card{
     .card-img{
         min-height: 350px;
         overflow: hidden;
-        background-image: url(https://material.angular.io/assets/img/examples/shiba2.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        
     }
     h5{
         font-size: .6rem;

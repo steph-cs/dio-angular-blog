@@ -1,27 +1,20 @@
 <div class="card my-5">
-    <div class="card-img">
-        
+    <div class="card-img" style="background-image: url({{mainNews.cardImg}});">
     </div>
     <div class="card-body">
-        <h5>Baker - 19 JAN 2022</h5>
+        <h5>{{mainNews.cardAuthor}} - {{mainNews.cardDate}}</h5>
         <a href=""class="text-dark title">
             <h2 class="align-text-center">
-                Migrating to Linear 101 
+                {{mainNews.cardTitle}}
                 <mat-icon class="icon" fontIcon="north_east"></mat-icon>
             </h2> 
         </a>
         <p class="card-text">
-            Linear helps streaming software projects, sprints, tasks and bug tracking. Here's how to get started.
+            {{mainNews.cardText}}
         </p>
         <div class="">
-            <a href="" class="btn btn-outline-dark btn-sm m-1">
-                Product
-            </a>
-            <a href="" class="btn btn-outline-dark btn-sm m-1">
-                Tools
-            </a>
-            <a href="" class="btn btn-outline-dark btn-sm m-1">
-                SaaS
+            <a *ngFor="let key of mainNews.cardKeys" href="" class="btn btn-outline-dark btn-sm m-1">
+                {{key}}
             </a>
         </div>
     </div>
