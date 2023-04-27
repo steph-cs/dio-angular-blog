@@ -1,0 +1,26 @@
+a{
+    text-decoration: none;
+}
+
+
+.card{
+    h5{
+        font-size: .6rem;
+    }
+    .title:hover{
+        text-decoration: underline;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    p{
+        font-size: .8em;
+    }
+    .btn{
+        --bs-btn-padding-y: .17rem; 
+        --bs-btn-padding-x: .5rem; 
+        --bs-btn-font-size: .6rem;
+        --bs-btn-border-radius: 1.2rem;
+    }
+}
+
